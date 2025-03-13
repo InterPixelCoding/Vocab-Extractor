@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(15, 35, 56);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    padding-block: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.neu-container {
+    padding: 3rem .5rem;
+    position: fixed;
+    inset: 10vw;
+    background: inherit;
+    box-shadow: 1.75rem 1.75rem 2rem rgba(0, 0, 0, 0.174),
+                -1.75rem -1.75rem 2rem rgba(255, 255, 255, 0.024);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.neu-container > div {
+    max-width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    text-align: center;
+}
+
+.file-link {
+    background: rgba(255, 255, 255, 0.253);
+    border: 1px solid rgba(255, 255, 255, 0.453);
+    border-radius: .75rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: white;
+    font-family: inherit;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.file-upload {
+    display: none;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 .125rem .125rem black);
+}
+
+label, button {
+    background: rgba(255, 255, 255, 0.253);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: .75rem;
+    color: inherit;
+    border: none;
+    font-family: inherit;
+    transition: 250ms ease all;
+}
+
+label:hover, button:hover {
+    background: rgba(255, 255, 255, 0.327);
+}
+
+.neu-container > .add-file {
+    max-width: 15vw;
+    overflow: hidden;
+}
+
+.add-file > button {
+    width: 100%;
+}
+
+.vocab-container {
+    max-width: unset;
+    width: 100%;
+}
+
+.word-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: inset 1rem 1rem 1rem rgba(0, 0, 0, 0.174),
+    inset -1rem -1rem 1rem rgba(255, 255, 255, 0.024);
+    padding: 2rem;
+    font-size: 1.5rem;
+    overflow: auto;
+}
+
+.uploaded-files {
+    display: grid;
+    font-weight: 100;
+    gap: .125rem;
+}
+
+.uploaded-files > * {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.word-container > button {
+    padding: .5rem;
+    background: rgba(255,255,255,0.05)
+}
+
+

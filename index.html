@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>Vocab Extracter</title>
+</head>
+<body>
+    <h1 class="drop-shadow">Vocab Extracter</h1>
+    <div class="neu-container">
+        <div class="file-container">
+            <h2 class="drop-shadow">Paste link or Upload a PDF</h2>
+            <input class="file-upload" type="file" name="pdf-input" id="pdf-input">
+            <label for="pdf-input" class="drop-shadow">Upload File</label>
+            <input type="text" name="file-link" class="file-link drop-shadow" spellcheck="false">
+        </div>
+        <div class="add-file">
+            <button class="drop-shadow">Add File to Vocab Bank</button>
+            <div class="uploaded-files">
+                <span><b><u>Uploaded Files:</u></b></span>
+            </div>
+            <input type="range" class="vocab-range drop-shadow" min="10" max="500" step="1" value="10">
+            <span class="vocab-value">Number of Highest Frequency Words: 10</span>
+        </div>
+        <div class="vocab-container">
+            <h2 class="drop-shadow">Vocabulary</h2>
+            <div class="word-container">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
