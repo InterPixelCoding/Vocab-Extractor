@@ -1,5 +1,5 @@
 :root {
-    --col: rgba(0, 0, 0, 0.3);
+    --bg-colour: rgba(0, 0, 0, 0.3);
 }
 
 /********** Range Input Styles **********/
@@ -20,7 +20,7 @@ input[type="range"] {
  /***** Chrome, Safari, Opera and Edge Chromium styles *****/
  /* slider track */
  input[type="range"]::-webkit-slider-runnable-track {
-    background-color: var(--col);
+    background-color: var(--bg-colour);
     border-radius: 0.5rem;
     height: 0.5rem;  
  }
@@ -47,7 +47,7 @@ input[type="range"] {
  /******** Firefox styles ********/
  /* slider track */
  input[type="range"]::-moz-range-track {
-    background-color: var(--col);
+    background-color: var(--bg-colour);
     border-radius: 0.5rem;
     height: 0.5rem;
  }
@@ -64,8 +64,8 @@ input[type="range"] {
  }
  
  input[type="range"]:focus::-moz-range-thumb {
-   border: 1px solid var(--col);
-   outline: 3px solid var(--col);
+   border: 1px solid var(--bg-colour);
+   outline: 3px solid var(--bg-colour);
    outline-offset: 0.125rem; 
  }
  
@@ -81,3 +81,14 @@ input[type="range"] {
     background-color: darkgrey;
     outline: 1px solid slategrey;
   }
+
+
+
+option, select {
+  font-size: 1.125rem;
+  font-family: 'Space Grotesk';
+  background: var(--bg-colour);
+  color: inherit;
+  border: none;
+  outline: none;
+}

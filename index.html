@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script src="./script.js" defer></script>
-    <title>Vocab Extracter</title>
+    <title>Vocab Extractor</title>
 </head>
 <body>
-    <h1 class="drop-shadow">Vocab Extracter</h1>
+    <h1 class="drop-shadow">Vocab Extractor</h1>
     <div class="neu-container">
         <div class="file-container">
             <h2 class="drop-shadow">Paste link or Upload a PDF</h2>
@@ -20,6 +20,13 @@
             <input type="text" name="file-link" class="file-link drop-shadow" spellcheck="false">
         </div>
         <div class="add-file">
+            <label for="lang">Target Language:</label>
+            <select name="lang" id="lang">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+            </select>
             <button class="drop-shadow">Add File to Vocab Bank</button>
             <div class="uploaded-files">
                 <span><b><u>Uploaded Files:</u></b></span>
@@ -31,6 +38,7 @@
             <h2 class="drop-shadow">Vocabulary</h2>
             <div class="word-container">
             </div>
+            <button class="copy">Copy Vocabulary to Clipboard</button>
         </div>
     </div>
 </body>
